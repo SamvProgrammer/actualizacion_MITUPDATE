@@ -1,0 +1,54 @@
+﻿<Window x:Class="mitUpdate.formulario.frmLogin" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowStartupLocation="CenterScreen"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" ResizeMode="NoResize" 
+        Title="Login - MITUpdate Para PcPay" Height="234.742" Width="364.396" Loaded="Window_Loaded" Icon="/mitUpdate;component/mit.ico">
+    <Window.Resources>
+
+    </Window.Resources>
+    <Grid>
+        <Label FontSize="14" FontWeight="Bold" Foreground="#B40404" Content="Usuario:" HorizontalAlignment="Left" Height="30" Margin="33,63,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label FontSize="14" FontWeight="Bold" Foreground="#B40404" Content="Contraseña:" HorizontalAlignment="Left" Height="30" Margin="10,92,0,0" VerticalAlignment="Top" Width="101"/>
+        <TextBox MaxLength="30" CharacterCasing="Upper" x:Name="txtUser" HorizontalAlignment="Left" Height="24" Margin="116,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="198">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <Trigger Property="IsFocused" Value="true">
+                            <Setter Property="Background" Value="#A9D0F5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <PasswordBox MaxLength="30" x:Name="txtPwd" HorizontalAlignment="Left" Margin="116,97,0,0" VerticalAlignment="Top" Width="198" Height="25">
+            <PasswordBox.Style>
+                <Style TargetType="{x:Type PasswordBox}">
+                    <Style.Triggers>
+                        <Trigger Property="IsFocused" Value="true">
+                            <Setter Property="Background" Value="#A9D0F5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </PasswordBox.Style>
+        </PasswordBox>
+
+        <Image HorizontalAlignment="Left" Height="36" Margin="22,138,0,0" VerticalAlignment="Top" Width="118" Source="/mitUpdate;component/Logo PCPAY.png" RenderTransformOrigin="0.071,0.5"/>
+        <Label Foreground="#585858"  Content="Versión 1.0.5" FontSize="9" HorizontalAlignment="Left" Height="22" Margin="22,174,0,0" VerticalAlignment="Top" Width="80"/>
+        <Border Background="#FF0C4375" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="358">
+            <Grid>
+                <Image HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="258" Source="/mitUpdate;component/logo_mit.png"/>
+            </Grid>
+        </Border>
+        <Separator HorizontalAlignment="Left" Height="15" Margin="6,123,0,0" VerticalAlignment="Top" Width="341" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Image Cursor="Hand" MouseDown="Image_MouseDown" HorizontalAlignment="Left" Height="59" Margin="219,137,0,0" VerticalAlignment="Top" Width="63" Source="/mitUpdate;component/aceptar.PNG"/>
+        <Image Cursor="Hand" MouseDown="Image_MouseDown_1" HorizontalAlignment="Left" Height="59" Margin="282,137,0,0" VerticalAlignment="Top" Width="66" Source="/mitUpdate;component/salir.PNG"/>
+    </Grid>
+</Window>

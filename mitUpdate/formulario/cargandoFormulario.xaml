@@ -1,0 +1,17 @@
+﻿<Window x:Class="mitUpdate.formulario.cargandoFormulario" Background="#A9BCF5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowStartupLocation="CenterScreen"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" ResizeMode="NoResize" WindowStyle="None"
+          xmlns:fa="http://schemas.fontawesome.io/icons/"
+        Title="cargandoFormulario" Height="91.045" Width="523.881">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="64" Margin="10,17,0,0" VerticalAlignment="Top" Width="85">
+            <fa:ImageAwesome Icon="Spinner" Spin="True" SpinDuration="4" />
+        </Grid>
+        <Label FontSize="18" Foreground="#610B0B" FontStyle="Normal" FontWeight="Bold" HorizontalAlignment="Left" Margin="100,10,0,0" VerticalAlignment="Top" Width="414" Height="71">
+            <TextBlock TextWrapping="Wrap">
+                Actualizando PcPay, esto puede tardar varios minutos, favor de esperar
+            </TextBlock>
+        </Label>
+
+    </Grid>
+</Window>

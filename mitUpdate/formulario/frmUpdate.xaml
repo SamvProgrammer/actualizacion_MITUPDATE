@@ -1,0 +1,27 @@
+﻿<Window x:Class="PcPay.Forms.Formularios.frmUpdate" Closing="Window_Closing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Title="MITUpdate Para PcPay PCPAY" Height="286.45" Width="493.862" Loaded="Window_Loaded"  >
+    <Grid>
+
+        <Image   HorizontalAlignment="Left" Height="45" Margin="69,24,0,0" VerticalAlignment="Top" Width="61" />
+        <Image  HorizontalAlignment="Left" Height="45" Margin="196,24,0,0" VerticalAlignment="Top" Width="48" />
+        <Label Foreground="White" Background="#FF0C4375" x:Name="lblStatus" Content="Haga clic en el botón upDate para actualizar PcPay" HorizontalAlignment="Left" Height="33" Margin="1,221,0,0" VerticalAlignment="Top" Width="485"/>
+        <ProgressBar x:Name="PrgBar1" Value="0" HorizontalAlignment="Left" Height="28" Margin="36,188,0,0" VerticalAlignment="Top" Width="410"/>
+        <Label Content="0%" x:Name="porcentaje" HorizontalAlignment="Left" Height="28" Margin="233,188,0,0" VerticalAlignment="Top" Width="44"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="105" Margin="104,69,0,0" VerticalAlignment="Top" Width="286">
+            <Grid>
+                <Button Cursor="Hand" x:Name="lblUpdate" Click="Button_Click_1" FontWeight="Bold" Foreground="#B40404" Background="Transparent" Content="Update" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="93" Margin="28,63,0,0"/>
+                <Button Cursor="Hand" x:Name="lblCancelar" Click="Button_Click" FontWeight="Bold" Foreground="#B40404" Background="Transparent" Content="Cancelar" HorizontalAlignment="Left" Height="30" Margin="164,63,0,0" VerticalAlignment="Top" Width="93"/>
+                <Image HorizontalAlignment="Left" Height="48" Margin="49,10,0,0" VerticalAlignment="Top" Width="49" Source="/mitUpdate;component/update.png"/>
+                <Image HorizontalAlignment="Left" Height="48" Margin="183,10,0,0" VerticalAlignment="Top" Width="49" Source="/mitUpdate;component/cancelar.jpg"/>
+            </Grid>
+        </Border>
+        <Border Background="#FF0C4375" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="485" Margin="1,1,0,0">
+            <Grid>
+                <Image HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="198" Source="/mitUpdate;component/logo_mit.png" Margin="0,0,0,-16"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
